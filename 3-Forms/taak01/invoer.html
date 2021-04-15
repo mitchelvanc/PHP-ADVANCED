@@ -5,14 +5,28 @@
     </head>
     <body>
         
-        <form name="invoerform" action="mijngegevens.php" method="post">
+        <form action="mijngegevens.php" method="post">
 
-            <input type="text" name="voornaam" placeholder="voornaam">
-            <input type="text" name="achternaam" placeholder="achternaam">
-            <input type="number" name="leeftijd" placeholder="leeftijd">
-            <input type="text" name="adres" placeholder="adres">
-            <input type="text" name="muziekband" placeholder="muziekband">
-            <input type="submit">
+            <uL><input type="text" name="voornaam" placeholder="voornaam"></uL>
+            <ul><input type="text" name="achternaam" placeholder="achternaam"></uL>
+            <ul><input type="number" name="leeftijd" placeholder="leeftijd"></uL>
+            <ul><input type="text" name="woonplaats" placeholder="woonplaats"></uL>
+            <ul> <input type="text" name="adres" placeholder="adres"></uL>
+            <ul><input type="text" name="muziekband" placeholder="muziekband"></uL>
+           
+            <ul>man <input type="radio" checked="checked" value="man" name="geslacht"> 
+             vrouw <input type="radio" value="vrouw" name="geslacht"></ul>
+            
+
+
+            <ul>kies een kleur <select name="kleur" id="kleur">
+                    <option value="red">rood</option>
+                    <option value="green">groen</option>
+                    <option value="blue">blauw</option>
+                    <option value="yellow">geel</option>
+                    <option value="purple">paars</option>
+            </select></ul>
+            <ul><input type="submit"></uL>
 
 
 
