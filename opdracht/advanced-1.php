@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>advanced php</title>
-        <style>
-           
-
-
-
-        </style>
+<head>
+        <title>advancend-1</title>
     </head>
     <body>
-
-    <form action="advanced-2.php" method="POST">
-        <ul><label for="padding">cel-dikte (px)</label>
-        <input type="number" name="padding" placeholder="cel-dikte"></ul>
-
-        <ul><label for="tabel">tabelrand dikte (px)</label>
-        <input type="number" name="tabel" placeholder="tabelrand dikte"></ul>
-
-        <ul><label for="textkleur">kies een kleur</label>
-        <select id="textkleur" name="textkleur" size="1">
-            <?php
-
-                $textkleur = array("red", "blue", "green", "black", "brown");
-                foreach ($textkleur as $key => $value) {
-                    echo "<option value=".$value.">$value</option>";
-                }
-            ?></select></ul>
-
-        <ul><label for="kleur">kies een achtergrondkleur</label>
-        <select id="kleur" name="kleur" size="1">
-            <?php
-
-                $kleur = array("red", "blue", "green", "black", "brown");
-                    foreach ($kleur as $key => $value) {
-                    echo "<option value=".$value.">$value</option>";
-                }
-            ?></select></ul>
-        <input type="submit">
-        
-    </form>
+    <form name="tabeldikte" action="advanced-2.php"
+        method="post">
+        <?php
+            $kleuren =["","red", "blue", "green", "black", "brown"];      
+        ?>
+ 
+    Kies een tekst kleur: <select name="kleuren" id="kleuren">
+               
+                    <?php   foreach($kleuren as $value)
+                        { 
+                            echo "<option value=\"$value\">$value</option>";
+                        }                   
+                    ?>
+               
+            </select>
+ 
+        <br><br>
+ 
+    Kies een achtergrond kleur: <select name="kleur" id="kleur">      
+                <option value=
+                    <?php   foreach($kleuren as $value)
+                        { 
+                            // echo "$value[0] <br>" ;
+                            echo "<option value=\"$value\">$value</option>";
+                        }
+                    ?>>
+                </option>          
+            </select>
+ 
+        <br></br>
+ 
+            Tabel-border dikte (px): <input type="text" name="dikte" size="2">
+            <input type="submit" name="submit" value="verstuur">
+        </form>
     </body>
 </html>
