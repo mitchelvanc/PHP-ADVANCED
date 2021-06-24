@@ -10,7 +10,8 @@
             }
  
         table, td, th {
-            border: <?php echo $_POST["dikte"]?>  solid black;
+            border: <?php echo $_POST["dikte"]?>px solid black;
+            padding: <?php echo $_POST["padding"]?>px;
             text-align: left;
             border-spacing: 5px;
             margin-left: auto;

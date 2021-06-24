@@ -34,8 +34,10 @@
             </select>
  
         <br></br>
- 
+                    
             Tabel-border dikte (px): <input type="text" name="dikte" size="2">
+        <br></br>
+        Tabel-padding dikte (px): <input type="text" name="padding" size="2">
             <input type="submit" name="submit" value="verstuur">
         </form>
     </body>
